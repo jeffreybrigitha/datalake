@@ -20,7 +20,7 @@ az storage account create \
 
 DATA_LAKE_WORKFLOW='datalakeorchestrator'
 ARM_LOCATION='arm/data_factory.json'
-ARM_PROPS_LOCATION='../conf/data_factory_prop.json'
+ARM_PROPS_LOCATION='conf/data_factory_prop.json'
 # Create Data Factory Version 2 
 az group deployment create \
  --name $DATA_LAKE_WORKFLOW \
@@ -56,7 +56,7 @@ az sql server firewall-rule create \
 
  DATA_LAKE_WORKFLOW_DB='databricksjb'
 ARM_LOCATION_DB='arm/databricks.json'
-ARM_PROPS_LOCATION_DB='../conf/databricks_prop.json'
+ARM_PROPS_LOCATION_DB='conf/databricks_prop.json'
 # Create Azure Databricks 
 az group deployment create \
  --name $DATA_LAKE_WORKFLOW_DB \
