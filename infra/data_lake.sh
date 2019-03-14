@@ -28,8 +28,8 @@ az group deployment create \
  --template-file $ARM_LOCATION \
  --parameters $ARM_PROPS_LOCATION
 
- DATA_LAKE_SERVER_NAME='rcdxjbserver'
-DATA_LAKE_DATABASE_NAME='databasejb2'
+ DATA_LAKE_SERVER_NAME='rcdxjbsqlserver'
+DATA_LAKE_DATABASE_NAME='databasesqljb'
 ADMIN_USERNAME='jeffreybrigitha'
 ADMIN_PASSWD='Gispen1991!'
 ## Create a logical server in the resource group
