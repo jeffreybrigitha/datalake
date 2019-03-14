@@ -28,7 +28,7 @@ az group deployment create \
  --template-file $ARM_LOCATION \
  --parameters $ARM_PROPS_LOCATION
 
- DATA_LAKE_SERVER_NAME='rcdxjbsqlserver'
+DATA_LAKE_SERVER_NAME='rcdxjbsqlserver'
 DATA_LAKE_DATABASE_NAME='databasesqljb'
 ADMIN_USERNAME='jeffreybrigitha'
 ADMIN_PASSWD='Gispen1991!'
@@ -54,7 +54,7 @@ az sql server firewall-rule create \
  --start-ip-address 0.0.0.0 \
  --end-ip-address 0.0.0.0
 
- DATA_LAKE_WORKFLOW_DB='databricksjb'
+DATA_LAKE_WORKFLOW_DB='databricksjb'
 ARM_LOCATION_DB='arm/databricks.json'
 ARM_PROPS_LOCATION_DB='conf/databricks_prop.json'
 # Create Azure Databricks 
@@ -64,7 +64,7 @@ az group deployment create \
  --template-file $ARM_LOCATION_DB \
  --parameters $ARM_PROPS_LOCATION_DB
 
- DATA_LAKE_DWH_NAME='jbdwh'
+DATA_LAKE_DWH_NAME='jbdwh'
 # Create a SQL Datawarehouse
 az sql dw create \
  --resource-group $DATA_LAKE_RG \
